@@ -1,5 +1,4 @@
 function EX_preloadImages() {
-    return;
 	var targetNode = document.getElementById('exlink');
 	var newNode1 = document.createElement('div');
 	newNode1.className = 'maincon  mgt10 textcenter';
