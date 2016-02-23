@@ -15,10 +15,10 @@ function EX_preloadImages1() {
 function EX_preloadImages2() {
 	var element = document.getElementById('text1');
 	var target  = element.firstChild.nextSibling;
-	target.innerHTML = target.innerHTML + '<a href="http://goo.gl/loSAOl">給料が上がらないことをクソ上司にブチ切れた結果ｗｗｗ→とんでもない結末に…[PR]</a>';
+	target.outerHTML = target.outerHTML + '<br/><br/><a href="http://goo.gl/loSAOl">給料が上がらないことをクソ上司にブチ切れた結果ｗｗｗ→とんでもない結末に…[PR]</a>';
+	target.outerHTML = target.outerHTML + '<br/><a href="http://goo.gl/0DWycU">２９歳、月収２３万の負け組リーマンが即５万円稼げた秘密を暴露した結果ｗｗｗｗ[PR]</a>';
 }
 
-//	target.innerHTML = target.innerHTML + '<a href="http://goo.gl/0DWycU">２９歳、月収２３万の負け組リーマンが即５万円稼げた秘密を暴露した結果ｗｗｗｗ[PR]</a>';
 //	target.innerHTML = target.innerHTML + '<a href="http://tankiokanekasegu.seesaa.net/">短期間でお金を稼ぐ情報集</a>';
 
 //外部リンク
