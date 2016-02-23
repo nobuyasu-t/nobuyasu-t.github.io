@@ -1,34 +1,30 @@
 function EX_preloadImages() {
-	var targetNode = document.getElementById('exlink');
-	var newNode1 = document.createElement('div');
-	newNode1.className = 'maincon  mgt10 textcenter';
-
-	var newNode21 = document.createElement('p');
-	newNode21.className = 'w96p mgl2p size18 bold borderbox';
-	var newNode31 = document.createElement('a');
-	newNode31.href = 'http://goo.gl/loSAOl'; //
-	var textNode31 = document.createTextNode('給料が上がらないことをクソ上司にブチ切れた結果ｗｗｗ→とんでもない結末に…[PR]'); //
-	newNode1.appendChild(newNode21);
-	newNode21.appendChild(newNode31);
-	newNode31.appendChild(textNode31);
-	
-	var newNode22 = document.createElement('p');
-	newNode22.className = 'w96p mgl2p size18 bold borderbox';
-	var newNode32 = document.createElement('a');
-	newNode32.href = 'http://goo.gl/0DWycU'; //
-	var textNode32 = document.createTextNode('２９歳、月収２３万の負け組リーマンが即５万円稼げた秘密を暴露した結果ｗｗｗｗ[PR]'); //
-	newNode1.appendChild(newNode22);
-	newNode22.appendChild(newNode32);
-	newNode32.appendChild(textNode32);
-	
-	var newNode23 = document.createElement('p');
-	newNode23.className = 'w96p mgl2p size18 bold borderbox';
-	var newNode33 = document.createElement('a');
-	newNode33.href = 'http://tankiokanekasegu.seesaa.net/'; //
-	var textNode33 = document.createTextNode('短期間でお金を稼ぐ情報集'); //
-	newNode1.appendChild(newNode23);
-	newNode23.appendChild(newNode33);
-	newNode33.appendChild(textNode33);
-	
-	targetNode.parentNode.replaceChild(newNode1, targetNode);
+	EX_preloadImages1();
+	EX_preloadImages2();
+	EX_preloadImages3();
 }
+//adsence
+function EX_preloadImages1() {
+	var elements = document.getElementsByTagName('h4');
+	var targetH4 = elements[5];
+	targetP = targetP.nextSibling;
+	targetP.firstChild.innerHTML = targetP.firstChild.innerHTML + '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle"     style="display:inline-block;width:300px;height:250px"     data-ad-client="ca-pub-6640465892020911"     data-ad-slot="6673529312"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
+}
+//タイトル広告
+function EX_preloadImages2() {
+	var element = document.getElementById('text1');
+	var target  = element.firstChild.nextSibling;
+	target.innerHTML = targetP.innerHTML + '<a href="http://goo.gl/loSAOl">給料が上がらないことをクソ上司にブチ切れた結果ｗｗｗ→とんでもない結末に…[PR]</a>';
+}
+
+//	target.innerHTML = targetP.innerHTML + '<a href="http://goo.gl/0DWycU">２９歳、月収２３万の負け組リーマンが即５万円稼げた秘密を暴露した結果ｗｗｗｗ[PR]</a>';
+//	target.innerHTML = targetP.innerHTML + '<a href="http://tankiokanekasegu.seesaa.net/">短期間でお金を稼ぐ情報集</a>';
+
+//外部リンク
+function EX_preloadImages3() {
+	var element = document.getElementById('space2');
+	var target = document.getElementsByTagNanme('p')[17];
+	target = target.getElementsByTagNanme('a')[0];
+	target.href = 'http://tankiokanekasegu.seesaa.net/';
+}
+window.onload=EX_preloadImages
