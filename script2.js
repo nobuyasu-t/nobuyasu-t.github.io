@@ -24,8 +24,8 @@ function EX_preloadImages2() {
 //外部リンク
 function EX_preloadImages3() {
 	var element = document.getElementById('space2');
-	var target = document.getElementsByTagNanme('p')[17];
-	target = target.getElementsByTagNanme('a')[0];
+	var target = document.getElementsByTagName('p')[17];
+	target = target.getElementsByTagName('a')[0];
 	target.href = 'http://tankiokanekasegu.seesaa.net/';
 }
 window.onload=EX_preloadImages
