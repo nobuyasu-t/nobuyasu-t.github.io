@@ -7,6 +7,7 @@ function EX_preloadImages() {
 function EX_preloadImages1() {
 	var elements = document.getElementsByTagName('h4');
 	var targetH4 = elements[5];
+	var targetP = targetH4.nextSibling;
 	targetP = targetP.nextSibling;
 	targetP.firstChild.innerHTML = targetP.firstChild.innerHTML + '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle"     style="display:inline-block;width:300px;height:250px"     data-ad-client="ca-pub-6640465892020911"     data-ad-slot="6673529312"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
 }
