@@ -5,12 +5,14 @@ function EX_preloadImages() {
 }
 //adsence
 function EX_preloadImages1() {
+/*
 	var elements = document.getElementsByTagName('h4');
 	var targetH4 = elements[5];
 	var targetP = targetH4.nextSibling;
 	targetP = targetP.nextSibling;
 //	targetP.lastElementChild.outerHTML = targetP.lastElementChild.outerHTML + '
 	var targetLastA = targetP.lastChild;
+*/
 
 	var newNode1 = document.createElement('p');
 	newNode1.style = 'max-width:100%; height: auto;';
@@ -34,7 +36,13 @@ function EX_preloadImages1() {
 	newNode1.appendChild(newNode1_1);
 	newNode1.appendChild(newNode1_2);
 	newNode1.appendChild(newNode1_3);
-	targetLastA.parentNode.replaceChild(newNode1, targetLastA);
+
+//	targetLastA.parentNode.replaceChild(newNode1, targetLastA);
+
+	var element = document.getElementById('space2');
+	var target = element.getElementsByTagName('center')[2];
+	target.appendChild(newNode1);
+
 }
 //タイトル広告
 function EX_preloadImages2() {
@@ -49,7 +57,7 @@ function EX_preloadImages2() {
 //外部リンク
 function EX_preloadImages3() {
 	var element = document.getElementById('space2');
-	var target = element.getElementsByTagName('p')[17];
+	var target = element.getElementsByTagName('p')[0];
 	target = target.getElementsByTagName('a')[0];
 	target.href = 'http://tankiokanekasegu.seesaa.net/';
 }
