@@ -63,8 +63,9 @@ function EX_preloadImages1b() {
 	var newNode1_3 = document.createElement('script');
 	newNode1_3.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
 
-	var element = document.getElementById('canvas');
-	target = element;
+	var element = document.getElementById('space2');
+	var target = element.getElementsByTagName('center');
+	target = target[0];
 	target.appendChild(newNode1_1);
 	target.appendChild(newNode1_2);
 	target.appendChild(newNode1_3);
