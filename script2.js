@@ -35,13 +35,6 @@ function EX_preloadImages1() {
 	newNode1.appendChild(newNode1_2);
 	newNode1.appendChild(newNode1_3);
 	targetLastA.parentNode.replaceChild(newNode1, targetLastA);
-
-
-	<p style="max-width:100%; height: auto;">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<ins class="adsbygoogle"     style="display:inline-block;width:300px;height:250px"     data-ad-client="ca-pub-6640465892020911"     
-	data-ad-slot="6673529312"></ins>
-	<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></p>';
 }
 //タイトル広告
 function EX_preloadImages2() {
