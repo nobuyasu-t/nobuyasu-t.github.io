@@ -86,7 +86,7 @@ function EX_preloadImages2() {
 function EX_preloadImages3() {
 	var element = document.getElementById('space2');
 	var target = element.getElementsByTagName('span');
-	target = target[0];
+	target = target[5];
 	target = element.getElementsByTagName('p');
 	target = target[0];
 	target = target.getElementsByTagName('a');
