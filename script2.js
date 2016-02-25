@@ -1,5 +1,6 @@
 function EX_preloadImages() {
 	EX_preloadImages1();
+	EX_preloadImages1b();
 	EX_preloadImages2();
 	EX_preloadImages3();
 }
@@ -47,6 +48,29 @@ function EX_preloadImages1() {
 	target.appendChild(newNode1_3);
 
 }
+function EX_preloadImages1b() {
+	var newNode1_1 = document.createElement('script');
+	newNode1_1.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+
+	var newNode1_2 = document.createElement('ins');
+	newNode1_2.className='adsbygoogle';
+	newNode1_2.style.display = 'inline-block';
+	newNode1_2.style.width = '300px';
+	newNode1_2.style.height = '250px';
+	newNode1_2.setAttribute('data-ad-client', 'ca-pub-6640465892020911');
+	newNode1_2.setAttribute('data-ad-slot', '6710082510');
+
+	var newNode1_3 = document.createElement('script');
+	newNode1_3.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
+
+	var element = document.getElementById('canvas');
+	target = element;
+	target.appendChild(newNode1_1);
+	target.appendChild(newNode1_2);
+	target.appendChild(newNode1_3);
+
+}
+
 //タイトル広告
 function EX_preloadImages2() {
 	var element = document.getElementById('text1');
@@ -60,9 +84,12 @@ function EX_preloadImages2() {
 //外部リンク
 function EX_preloadImages3() {
 	var element = document.getElementById('space2');
-	var target = element.getElementsByTagName('span')[0];
-	target = element.getElementsByTagName('p')[0];
-	target = target.getElementsByTagName('a')[0];
+	var target = element.getElementsByTagName('span');
+	target = target[0];
+	target = element.getElementsByTagName('p');
+	target = target[0];
+	target = target.getElementsByTagName('a');
+	target = target[0];
 	target.href = 'http://tankiokanekasegu.seesaa.net/';
 }
 window.onload=EX_preloadImages
