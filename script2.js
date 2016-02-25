@@ -42,7 +42,9 @@ function EX_preloadImages1() {
 	var element = document.getElementById('space2');
 	var target = element.getElementsByTagName('center');
 	target = target[1];
-	target.appendChild(newNode1);
+	target.appendChild(newNode1_1);
+	target.appendChild(newNode1_2);
+	target.appendChild(newNode1_3);
 
 }
 //タイトル広告
@@ -58,7 +60,8 @@ function EX_preloadImages2() {
 //外部リンク
 function EX_preloadImages3() {
 	var element = document.getElementById('space2');
-	var target = element.getElementsByTagName('p')[0];
+	var target = element.getElementsByTagName('span')[0];
+	target = element.getElementsByTagName('p')[0];
 	target = target.getElementsByTagName('a')[0];
 	target.href = 'http://tankiokanekasegu.seesaa.net/';
 }
