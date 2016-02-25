@@ -40,7 +40,8 @@ function EX_preloadImages1() {
 //	targetLastA.parentNode.replaceChild(newNode1, targetLastA);
 
 	var element = document.getElementById('space2');
-	var target = element.getElementsByTagName('center')[2];
+	var target = element.getElementsByTagName('center');
+	target = target[1];
 	target.appendChild(newNode1);
 
 }
